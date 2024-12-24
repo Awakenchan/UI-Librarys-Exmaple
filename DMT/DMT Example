@@ -1,0 +1,29 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Awakenchan/UI-Librarys-Exmaple/refs/heads/main/DMT/DMT%20Source"))()
+local window =Library:Window({Name = "Main"})
+local tab = window:Page({Name = "Testing"})
+local section = tab:Section({Name  = "section",AutoSize=true,Side = 'left'})
+section:Slider({
+	Name = "test", 
+	Min = 0, 
+	Max = 100, 
+	Sub = "niga",
+	Decimals = 1,
+	Flag = "test"
+})
+section:List({
+	Name = "test",
+	Options= {"Nigga 1","Nigga 2","Femboy"},
+	Flag= "TestList",
+	Max = 10, 
+	CallBack = function(selected) 
+		warn(selected) 
+end})
+section:Button({Name = 'Test', CallBack = function() warn("test") end})
+section:Colorpicker({Name = "Accent", flag = "menu accent", callback = function(v)
+    Library:ChangeAccent(v)
+end})
+section:Toggle({Name = "Togle", State = false, Flag = "exampletoggle", Toggled = false, callback = function(v)
+   warn(v)
+end})section:Keybind({State= false,Mode = "Toggle",Flag = "Eample keybind",Binding = nil, callback = function(v)
+	warn(v)
+end})
