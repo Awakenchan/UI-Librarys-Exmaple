@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Awakenchan/UI-Librarys-Exmaple/refs/heads/main/PandoraSource"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Awakenchan/UI-Librarys-Exmaple/refs/heads/main/Pandora/PandoraSource"))()
 local window =Library:Window({allow_resize = true, size = Vector2.new(610,735)})
 local tab = window:Page({Name = "Testing"})
 local section = tab:Section({Name  = "section", size = "auto"})
